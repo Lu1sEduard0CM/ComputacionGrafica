@@ -1,5 +1,5 @@
 /*
-	Práctica 3
+	Práctica  3 
 	Cruz Miranda Luis Eduardo
 	Fecha de entrega: 31 de agosto de 2025
 	Número de cuenta: 319148204
