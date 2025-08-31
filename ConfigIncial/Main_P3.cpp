@@ -5,10 +5,6 @@
 	Número de cuenta: 319148204
 */
 
-
-
-
-
 #include<iostream>
 
 //#define GLEW_STATIC
@@ -257,12 +253,12 @@ int main() {
 
 		//Nuevos elementos
 
-		//model = glm::mat4(1); //	Inicializar matriz
+		model = glm::mat4(1); //	Inicializar matriz
 
 		// Acciones / Operaciones
-		//model = glm::translate(model, glm::vec3(-3.0f, 0.0f, -4.0f));
-		//model = glm::rotate(model, 0.5f, glm::vec3(1.0f, -2.0f, -2.0f)); // use to compare orthographic and perspective projection
-		//model = glm::scale(model, glm::vec3(2.0f, 2.0f, 2.0f));
+		model = glm::translate(model, glm::vec3(-3.0f, 0.0f, -4.0f));
+		model = glm::rotate(model, 0.5f, glm::vec3(1.0f, -2.0f, -2.0f)); // use to compare orthographic and perspective projection
+		model = glm::scale(model, glm::vec3(2.0f, 2.0f, 2.0f));
 
 		//Mandar info al shader
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
