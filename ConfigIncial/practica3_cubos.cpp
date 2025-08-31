@@ -1,8 +1,10 @@
 /*
-	Práctica  3 
+	
+	Práctica 3 
 	Cruz Miranda Luis Eduardo
 	Fecha de entrega: 31 de agosto de 2025
 	Número de cuenta: 319148204
+
 */
 
 #include<iostream>
@@ -243,7 +245,6 @@ int main() {
 		GLint viewLoc = glGetUniformLocation(ourShader.Program, "view");
 		GLint projecLoc = glGetUniformLocation(ourShader.Program, "projection");
 
-		//Los Uniforms permiten enviar la información, son variables, del codigo base a la información de los shaders 
 
 		glUniformMatrix4fv(projecLoc, 1, GL_FALSE, glm::value_ptr(projection));
 		glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
