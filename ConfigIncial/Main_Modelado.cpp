@@ -1,7 +1,7 @@
 /*
 	Previo Práctica 4
 	Cruz Miranda Luis Eduardo
-	Fecha de entrega: 31 de agosto de 2025
+	Fecha de entrega: 2 de septiembre de 2025
 	Número de cuenta: 319148204
 */
 
