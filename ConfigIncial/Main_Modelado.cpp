@@ -41,7 +41,7 @@ int main() {
 
 	glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
 
-	GLFWwindow *window = glfwCreateWindow(WIDTH, HEIGHT, "Modelado geometrico", nullptr, nullptr);
+	GLFWwindow *window = glfwCreateWindow(WIDTH, HEIGHT, "Modelado geometrico Luis_Cruz", nullptr, nullptr);
 
 	int screenWidth, screenHeight;
 
@@ -65,7 +65,11 @@ int main() {
 		std::cout << "Failed to initialise GLEW" << std::endl;
 		return EXIT_FAILURE;
 	}
-
+	// Imprimimos informacin de OpenGL del sistema
+	std::cout << "> Version: " << glGetString(GL_VERSION) << std::endl;
+	std::cout << "> Vendor: " << glGetString(GL_VENDOR) << std::endl;
+	std::cout << "> Renderer: " << glGetString(GL_RENDERER) << std::endl;
+	std::cout << "> SL Version: " << glGetString(GL_SHADING_LANGUAGE_VERSION) << std::endl;
 
 	// Define las dimensiones del viewport
 	glViewport(0, 0, screenWidth, screenHeight);
