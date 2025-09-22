@@ -110,7 +110,7 @@ int main()
 
     // Load models
 
-    Model dog((char*)"Models/RedDog.obj"); 
+    Model dog((char*)"Models/Perro/RedDog.obj"); 
     //Model fence((char*)"Models/Fence_Design_3.obj");
     //Cargar ruta y nombre del objeto a cargar (ahí se encuentra el material y dentro de este la textura)
     glm::mat4 projection = glm::perspective( camera.GetZoom( ), 
