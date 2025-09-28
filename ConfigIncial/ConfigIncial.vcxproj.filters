@@ -40,7 +40,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Texturizado.cpp">
+    <ClCompile Include="practica7_texturizado.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
