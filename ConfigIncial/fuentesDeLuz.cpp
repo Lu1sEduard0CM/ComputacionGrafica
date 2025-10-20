@@ -168,8 +168,8 @@ int main()
 	Shader lightingShader("Shader/lighting.vs", "Shader/lighting.frag");
 	Shader lampShader("Shader/lamp.vs", "Shader/lamp.frag");
 	
-	Model Dog((char*)"Models/Planta/Transparencia/Planta.obj"); // --------- RedDog.obj
-	Model Piso((char*)"Models/piso.obj");
+	Model Dog((char*)"Models/Perro/RedDog.obj"); // --------- RedDog.obj Planta/Transparencia/Planta.obj
+	Model Piso((char*)"Models/Piso/piso.obj");
 
 
 
@@ -322,12 +322,12 @@ int main()
 
 	
 		model = glm::mat4(1);
-		glEnable(GL_BLEND);//----------- Activa la funcionalidad para trabajar el canal alfa
+		//glEnable(GL_BLEND);//----------- Activa la funcionalidad para trabajar el canal alfa
 		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 1); // -------------------- 0 o 1 para modelos sin o con transparencia
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "transparency"), 0); // -------------------- 0 o 1 para modelos sin o con transparencia
 	    Dog.Draw(lightingShader);
-		glDisable(GL_BLEND);  // ------------ Desactiva el canal alfa 
+		//glDisable(GL_BLEND);  // ------------ Desactiva el canal alfa 
 		glBindVertexArray(0);
 	
 

@@ -1,0 +1,39 @@
+# Blender 4.5.3 LTS MTL File: 'None'
+# www.blender.org
+# Archivo MTL actualizado con texturas
+
+newmtl GLASS
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 0.500000
+illum 4
+# Textura difusa para vidrio - usando textura holográfica
+map_Kd PAINTEDMETAL01NORMAL.jpg
+
+newmtl METAL_2
+Ns 323.999994
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.900000 0.900000 0.900000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+# Textura difusa para metal - usando textura de concreto en escala de grises
+map_Kd PAINTEDMETAL01SPEC.jpg
+
+newmtl WOOD_SUPPORT
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+# Textura difusa para madera - usando textura de concreto
+map_Kd PAINTEDMETAL01.jpg
